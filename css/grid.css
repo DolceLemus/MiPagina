@@ -10,9 +10,9 @@ https://www.youtube.com/watch?v=uUGHF0dM6GA
 **/
 
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .container {
@@ -20,19 +20,25 @@ https://www.youtube.com/watch?v=uUGHF0dM6GA
     max-width: 992px;
     margin: 0 auto;
 }
-/** Hack de clearfix **/
-.row:after, .row:before {
-    content: "";
-    display: table;
-    clear: both;
+
+.container-fluid{
+    width: 100%;
 }
-.row:after {
+.container-fluid .row{
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+/** Hack de clearfix **/
+.row::after, .row::before {
+    content:"";
+    display:table;
     clear: both;
 }
 
-[class*="col-"] {
-    min-height: 7px;
+[class *='col-'] {
     float: left;
+    min-height: 1em;
     /**gutters**/
     padding: 1em;
 }
@@ -51,10 +57,5 @@ https://www.youtube.com/watch?v=uUGHF0dM6GA
 .col-11{ width:91.66%; }
 .col-12{ width:100%; }
 
-/** Primer Breakpoint de bootstrap **/
-@media all and (max-width: 450px) {
-    [class*="col-"];
-        {
-        width: 100%;
-    }
-}
+/* source: http://www.anidocs.es/bootstrap/docs/scaffolding.php */
+/** End of Grid System **/

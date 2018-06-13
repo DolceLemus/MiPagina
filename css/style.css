@@ -1,11 +1,103 @@
-*{
-    font-family: 'Marck Script', cursive;
+* {
+    font-family: 'Amatic SC', cursive;
 }
 
- {
-    background-image: url(../assets/images/night.jpg);
+nav {
+    height: 56px;
+    background-color: #844A36;
+    color: white;
+}
+
+h1 {
+    color: white;
+}
+
+header {
+    background-image: url(../assets/images/header.jpg);
     background-position: center;
     background-size: cover;
     display: auto;
     height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+footer {
+    font-weight: bolder;
+    padding-top: .5em;
+    text-align: center;
+    background-color: #595F33;
+    height: 36px;
+}
+
+.brand {
+    float: left;
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-LEFT: 10px;
+}
+
+.menu {
+    float: rigth;
+    text-align: right;
+}
+
+.menu li {
+    display: inline-block;
+    height: 56px;
+    padding: 20px 10px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #DCC278;
+}
+
+.header-cont {
+    padding: 8em;
+    background-color: rgb(220, 194, 120, 0.3);
+    width: 100%;
+}
+
+.main-information p {
+    text-indent: 10%;
+    text-align: justify;
+}
+
+.picture img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.picture{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media (max-width:576px){
+    [class *='col-'] {
+       width: 100%;
+    }
+    .hide-on-mobile {
+        display: none;
+    }
+    h1{
+        font-size: 70px;
+
+    }
+    .header-cont{
+        padding: 4em;
+    }
+}
+@media (min-width:576px){
+    .hide-on-desktop {
+        display: none;
+    }
+    h1{
+        font-size: 56px;
+    }
 }
