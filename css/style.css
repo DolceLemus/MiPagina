@@ -1,0 +1,11 @@
+*{
+    font-family: 'Marck Script', cursive;
+}
+
+ {
+    background-image: url(../assets/images/night.jpg);
+    background-position: center;
+    background-size: cover;
+    display: auto;
+    height: 100%;
+}
