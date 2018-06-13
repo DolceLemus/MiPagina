@@ -1,15 +1,33 @@
+/* colors #DCC278 #844A36 */
+
 * {
     font-family: 'Amatic SC', cursive;
 }
 
 nav {
-    height: 56px;
-    background-color: #844A36;
-    color: white;
+    height: 5em;
+    background-color: #DCC278;
+    color: #595F33;
 }
 
 h1 {
     color: white;
+    font-weight: bolder;
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 3em;
+    color: #844A36;
+}
+h3 {
+    font-size: 2.5em;
+}
+h4 {
+    font-size: 2em;
+}
+p {
+    font-size: 1.5em;
 }
 
 header {
@@ -22,19 +40,29 @@ header {
     text-align: center;
 }
 
+
 footer {
     font-weight: bolder;
     padding-top: .5em;
     text-align: center;
     background-color: #595F33;
     height: 36px;
+    color: #DCC278;
 }
 
 .brand {
     float: left;
-    font-weight: bolder;
+    font-weight: 600;
     margin-top: 20px;
     margin-LEFT: 10px;
+    font-size: 35px;
+
+}
+
+.burger {
+    float: right;
+    margin-top: 15px;
+    margin-right: 10px;
 }
 
 .menu {
@@ -46,6 +74,7 @@ footer {
     display: inline-block;
     height: 56px;
     padding: 20px 10px;
+    font-size: 30px;
 }
 
 .menu a {
@@ -58,7 +87,7 @@ footer {
 }
 
 .header-cont {
-    padding: 8em;
+    padding: 2em;
     background-color: rgb(220, 194, 120, 0.3);
     width: 100%;
 }
@@ -68,36 +97,52 @@ footer {
     text-align: justify;
 }
 
-.picture img{
+.picture img {
     max-width: 100%;
     max-height: 100%;
 }
 
-.picture{
+.picture {
     max-width: 100%;
     max-height: 100%;
 }
 
-@media (max-width:576px){
+@media (max-width:576px) {
     [class *='col-'] {
-       width: 100%;
+        width: 100%;
+    }
+    h1 {
+        font-size: 70px;
+    }
+    h2 {
+        font-size: 3em;
+    }
+    h3 {
+        font-size: 2em;
+    }
+    h4 {
+        font-size: 1.5em;
+    }
+    p {
+        font-size: 20px;
     }
     .hide-on-mobile {
         display: none;
     }
-    h1{
-        font-size: 70px;
-
-    }
-    .header-cont{
+    .header-cont {
         padding: 4em;
     }
+    .brand {
+        margin-top: 1vh;
+        font-size: 2em;
+    }
 }
-@media (min-width:576px){
+
+@media (min-width:576px) {
     .hide-on-desktop {
         display: none;
     }
-    h1{
-        font-size: 56px;
+    h1 {
+        font-size: 80px;
     }
 }
