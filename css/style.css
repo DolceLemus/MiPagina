@@ -28,6 +28,7 @@ h4 {
 }
 p {
     font-size: 1.5em;
+    overflow-y: scroll;
 }
 
 header {
@@ -77,13 +78,17 @@ footer {
     font-size: 30px;
 }
 
+.enable-line{
+    display: block;
+}
+
 .menu a {
     color: white;
     text-decoration: none;
 }
 
 .menu a:hover {
-    color: #DCC278;
+    color: black;
 }
 
 .header-cont {
@@ -160,6 +165,13 @@ footer {
 
     .disabled-m{
         display: none;
+    }
+
+    .menu a:hover {
+        color: black;
+    }
+    .menu li{
+        background-color: #DCC278;
     }
 }
 
