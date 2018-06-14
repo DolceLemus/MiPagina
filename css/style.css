@@ -123,6 +123,8 @@ footer {
     cursor: pointer;
 }
 
+
+
 @media (max-width:576px) {
     [class *='col-'] {
         width: 100%;
@@ -151,6 +153,13 @@ footer {
     .brand {
         margin-top: 1vh;
         font-size: 2em;
+    }
+    .enable-m{
+        display: block;
+    }
+
+    .disabled-m{
+        display: none;
     }
 }
 
