@@ -107,6 +107,22 @@ footer {
     max-height: 100%;
 }
 
+.button-card{
+    padding-top: .5em;
+    padding-left: .3em;
+    height: 2.5em;
+    width: 6em;
+    background-color: #844A36;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.button-card:hover{
+    background-color: #78655f;
+    cursor: pointer;
+}
+
 @media (max-width:576px) {
     [class *='col-'] {
         width: 100%;
